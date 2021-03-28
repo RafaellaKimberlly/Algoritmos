@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+</head>
+<body>
+<h2 style="color: rgb(124, 29, 61);">Qual o Anime que você mais gosta?</h2>
+
+    <button onclick="NanatsunoTaizai()"> Nanatsu no Taizai</button>
+    <button onclick="Onepiece()">One piece</button>
+    <button onclick="Naruto()"> Naruto</button>
+    <button onclick="DragonBallZ()">Dragon Ball Z</button>    
+<br></br>
+<div id="div_msg">
+    Aqui será a mensagem do anime escolhido
+</div>
+
+
+
+
+
+</body>
+</html>
+
+<script>
+
+    function NanatsunoTaizai() {
+       div_msg.innerHTML += ('<br><h1 style="color: red;"> Rei dos Demonios </h1> </br>');
+    }
+
+    function Onepiece() {
+       div_msg.innerHTML += ('<br>Eu vou ser o rei dos piratas <br> 5° imperador do mar');
+    }
+
+    function Naruto() {
+        div_msg.innerHTML += ('<br> <b> Eu vou ser Hokage </b>');
+    }
+
+    function DragonBallZ() {
+        div_msg.innerHTML += ('<br> <i> Kamehame-haaaaaa </i></br>');
+    }
+</script>

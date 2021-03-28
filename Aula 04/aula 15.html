@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 01 aula 15</title>
+</head>
+<body>
+
+    <h2 style="color: blue;">Meus Herois favoritos são:</h2>
+
+    <b id="b_midoryaizuku" ></b>
+
+    <button onclick="Ver_Herois()">Ver Herois</button> <br>
+
+    <i id="i_allmight"></i>
+<br>
+    
+
+    <br></br>
+    
+    <h2>Meus vilões favoritos são:</h2>
+
+    <span id="span_coringa" style="background-color: red;"></span> 
+
+    <button onclick="Ver_Vilões()">Ver Vilões</button> <br>
+
+    <span id="span_alerquina"style="background-color: red; "></span>
+<br>
+    
+
+
+    
+
+</body>
+</html>
+
+<script>
+
+function Ver_Herois(){
+    b_midoryaizuku.innerHTML=('Midorya Izuku');
+    i_allmight.innerHTML=('All Might');
+
+}
+
+function Ver_Vilões(){
+    span_coringa.innerHTML=('Coringa: Vamos colocar um sorriso nesse rosto.')
+    span_alerquina.innerHTML=('Alerquina: O quê? Eu deveria matar todo mundo e fugir? Desculpem. As vozes... Estou brincando! Calma! Não foi isso que elas falaram.')
+}
+
+</script>

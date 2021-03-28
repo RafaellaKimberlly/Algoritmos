@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 06</title>
+</head>
+<body>
+    <h1>Oque faz um triatleta</h1>
+
+    <button onclick="Gol_do_remo()">Gol do remo</button>
+    <button onclick="Gol_do_paysandu()">Gol do paysandu</button>
+    <button onclick="Escanteio_para_o_remo()">Escanteio para o remo</button>
+    <button onclick="Escanteio_para_o_paysandu()">Escanteio para o paysandu</button>
+
+    <div id="div_acontecimentos">
+    <h3>Placar do Jogo</h3>
+</div>
+    
+</body>
+</html>
+
+<script>
+
+function Gol_do_remo(){
+    div_acontecimentos.innerHTML += ('<br><span style="color: blue;">Gol do <b>Leão!</b></span>')
+}
+
+function Gol_do_paysandu(){
+    div_acontecimentos.innerHTML += ('<br><span style="color: cyan;">Gol do <u>Mucura!</u></span>')
+}
+
+function Escanteio_para_o_remo(){
+    div_acontecimentos.innerHTML += ('<br>Escanteio para o Leão!')
+}
+
+function Escanteio_para_o_paysandu(){
+    div_acontecimentos.innerHTML += ('<br>Escanteio para o Mucura!')
+
+    }
+
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complemento 01</title>
+</head>
+<body>
+    
+    <h2>Orçamentos de Nicanor</h2>
+
+<br>
+<input type="text" id="metro" placeholder="metro">
+<button onclick="orcamento()">orcamento</button>
+<div id="div_msg">Orçamentos</div>
+<br>
+
+</body>
+</html>
+<script>
+
+function orcamento(){
+    var nicanor = Number(metro.value)* 10 + 50;
+    var rotirute = Number (metro.value)* 9.8 + 600;
+
+    div_msg.innerHTML = `O servico pela Nicanor sai por R$ ${nicanor} <br>`;
+    div_msg.innerHTML += `O servico pela Rotirute sai por R$ ${rotirute}<br>`;
+    div_msg.innerHTML += `A diferenca dos valores é de R$ ${nicanor - rotirute}`;
+}
+</script>

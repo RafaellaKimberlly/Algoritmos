@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 08</title>
+</head>
+<body>
+    <h2>Banco</h2>
+
+    <input placeholder="insira sua renda familiar" id="renda_fam">
+<br><br>
+<input placeholder="insira o valor da prestação" id="prest_valor">
+
+<button onclick="verificar()">Verificar financiamento</button>
+<br><br>
+
+<div id="div_msg"></div>
+</body>
+</html>
+<script>
+
+    function verificar(){
+        var familia = renda_fam.value;
+        var prestação = prest_valor.value;
+
+        var result = familia/prestação*100;
+
+        div_msg.innerHTML = `A prestação corresponde a ${result.toFixed(2)}% da renda familiar`;
+
+        if (result > 30){
+            div_msg.innerHTML += `<br><br><b style="color: tomato;">Será necessário complementar a renda familiar</b>`
+        }
+    }
+</script>

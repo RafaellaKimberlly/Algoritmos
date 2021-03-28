@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 10</title>
+</head>
+<body>
+    <h2>Torneio do Poder</h2>
+
+    <input placeholder="insira quantidade de partidas" id="quant_part">
+<br><br>
+<input placeholder="insira quantidade de vitórias" id="quant_vit">
+
+<button onclick="estudar()">Estudar Lutador</button>
+<br><br>
+
+<div id="div_msg"></div>
+
+
+</body>
+</html>
+<script>
+function estudar(){
+    var partidas = quant_part.value;
+    var vitorias = quant_vit.value;
+
+    var result = vitorias/partidas;
+
+    if(result>0.6){
+        div_msg.innerHTML = `Mais forte do universo!`;
+    }
+
+    else{
+        if(result<=0.2){
+       div_msg.innerHTML = `Você precisa treinar mais!`;
+        }
+        else{
+            div_msg.innerHTML = `Você é forte mais lhe falta poder`;
+        }
+    }
+
+
+    div_msg.innerHTML += `<br><br><b>Sua média de partidas e vitorias é de ${result.toFixed(1)}<br>`;
+}
+
+</script>

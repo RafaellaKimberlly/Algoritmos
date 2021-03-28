@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerc 02</title>
+</head>
+<body>
+
+    <input id="qtde_pontos" placeholder="digite a quantidade de pontos">
+    <button onclick="validar()">validar</button>
+    <br><br>
+
+    <span id="resposta"></span>
+    
+</body>
+</html>
+
+<script>
+    function validar(){
+        var pontos = qtde_pontos.value;
+        var multa = 0;
+
+        if(pontos >=20){
+            resposta.innerHTML = `carteira suspensa pois possui ${pontos}pontos<br>`;
+
+        }
+
+        if(pontos <20){
+            multa = pontos*78;
+      resposta.innerHTML = `sua multa é de R$ ${multa.toFixed(2)}`;
+        }
+    }
+</script>

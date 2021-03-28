@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 07</title>
+</head>
+<body>
+    <h2>Frequencia do aluno</h2>
+
+    <input placeholder="insira a Frequencia" id="inp_freq">
+<br><br>
+
+
+<button onclick="analisar()">Analisar Frequencia</button>
+<br><br>
+
+<div id="div_msg"></div>
+</body>
+</html>
+
+<script>
+    function analisar(){
+        var frequencia = inp_freq.value;
+
+        if(frequencia<50){
+            div_msg.innerHTML = `Turista!!! <br><br>
+            <img src = "https://i.pinimg.com/564x/14/84/99/14849980839fb4051e7372c3073b10cb.jpg>`;
+        }
+        else{
+            div_msg.innerHTML = `Estudioso!!! <br><br>
+            <img src = "https://i.pinimg.com/564x/05/d6/f4/05d6f4cc9a46e503ce947928cd5a5e21.jpg">`;
+        }
+    }
+
+</script>

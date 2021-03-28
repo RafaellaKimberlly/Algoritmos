@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 03</title>
+</head>
+<body>
+    <h2>Qual é o valor da pizza de hoje?</h2>
+
+    <input placeholder="Qual é o valor da pizza?" id="pizza_valor">
+<br><br>
+<input placeholder="Quantos amigos?" id="quant_amigos">
+
+<button onclick="pizza_but()">Rola pizza?</button>
+<br><br>
+
+<div id="div_msg"></div>
+</body>
+</html>
+
+<script>
+function pizza_but(){
+    var pizza = pizza_valor.value;
+    var amigos = quant_amigos.value;
+
+    var result = pizza / amigos;
+
+    div_msg.innerHTML = `Cada amigo vai pagar ${result} pela pizza`;
+
+    if (result>20){
+
+        div_msg.innerHTML += `<br><br><h3>Deu ruim! Pizza muito cara!</h3>`
+    }
+}
+
+</script>

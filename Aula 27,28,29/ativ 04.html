@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 07</title>
+</head>
+<body>
+    <h2>Elevador lokão</h2>
+
+    <input placeholder="Quantos homens" id="in_homens">
+<br><br>
+<input placeholder="Quantas mulheres" id="in_mulheres">
+
+<button onclick="analisar()">analisar</button>
+<br><br>
+
+<div id="div_msg"></div>
+
+
+</body>
+</html>
+<script>
+
+function analisar(){
+  var homens = Number(in_homens.value);
+  var mulheres = Number(in_mulhere.value);
+
+  var peso = homens*80+mulheres*60;
+
+  div_resultado.innerHTML =  `Este Elevador suporta 800 kg e o peso estimado desta lotação é de ${peso}KG`;
+
+  if (peso <=800){
+    div_resultado.innerHTML = `Elevador pode subir`
+  }
+    else{
+        div_resultado.innerHTML = `Alguem deve decer, o elevador não pode subir`
+    }
+    }
+</script>

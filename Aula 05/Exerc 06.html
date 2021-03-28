@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 06</title>
+</head>
+<body>
+    <h2 style="background-color: red; border: yellow;">Todo mundo gosta de pizza!!!</h2>
+
+    <input type="text" id="pre_pizza" placeholder="inserir sabor e preço da pizza">
+    <input type="text" id="quant_amigos" placeholder="inserir quantidade de amigos">
+<br><br>
+
+<button onclick="ver_amigo()">ver valor por amigo</button>
+<br><br>
+<div id="div_msg"></div>
+    
+</body>
+</html>
+
+<script>
+    function valor_da_pizza(){
+        div_msg.innerHTML = `Cada amigo vai colaborar com <u>R$ ${pre_pizza.value / quant_amigos.value}</u>`;
+    }
+</script>

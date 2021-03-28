@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 03 aula 22</title>
+</head>
+<body>
+    <h1>Studio Ghibli</h1>
+
+    <select id="ghibli">
+        <option value="">--Escolha um filme--</option>
+        <option value="https://br.pinterest.com/pin/386746686758602559.jpg">Ponyo</option>
+        <option value="https://br.pinterest.com/pin/123637952259437108.jpg">O castelo animado</option>
+        <option value="https://br.pinterest.com/pin/94716398405346824.jpg">Meu amigo Totoro</option>
+        <option value="https://br.pinterest.com/pin/27866091436352787.jpg">A viajem de Chihiro</option>
+        <option value="https://br.pinterest.com/pin/13510867621491714.jpg">Princesa Momonoke</option>
+
+    </select>
+
+<br><br>
+    <button onclick="ver_filme()">Ver filme</button>
+
+    <br><br>
+
+      <div id="mostrar"></div>
+
+    
+</body>
+</html>
+
+<script>
+
+    function ver_filme(){
+        
+        mostrar.innerHTML += `<img src="${ghibli}">`;
+        
+        }
+</script>

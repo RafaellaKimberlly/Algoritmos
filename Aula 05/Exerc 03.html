@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 03</title>
+</head>
+<body>
+    <h2>Cadastro de usuario:</h2>
+
+    <input type="text" id="cid_natal" placeholder="insira sua cidade natal">
+    <input type="text" id="ano_nascimento" placeholder="insira sua data de nascimento">
+
+    <button onclick="cadastrar()">cadastrar</button>
+<br>
+    <div id="div_msg"></div>
+
+</body>
+</html>
+
+<script>
+    function cadastrar(){
+        div_msg.innerHTML += (`Você nasceu na cidade:'<b>'${cid_natal.value}'</b>' '<u>'${ano_nascimento.value}'</u>'`);
+    }
+</script>

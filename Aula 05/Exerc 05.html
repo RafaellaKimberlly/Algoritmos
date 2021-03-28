@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 05</title>
+</head>
+<body>
+    <h2>Quanto você gasta por mês em passagem de onibus?</h2>
+
+    <input type="text" id="pass_valor" placeholder="insira o valor da passagem">
+    <input type="text" id="quant_viajens" placeholder="insira a quantidade de viajens">
+
+    <button onclick="calcular_vt()">Calcular VT</button>
+<br><br>
+
+<div id="div_msg"></div>
+
+</body>
+</html>
+
+<script>
+    function calcular_vt(){
+        div_msg.innerHTML = `Você vai gastar R$<u> ${pass_valor.value * quant_viajens.value * 30}</u> por mês com ônibus`;
+    }
+</script>

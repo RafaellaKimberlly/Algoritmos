@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerc 03</title>
+</head>
+<body>
+    <h2>BOM DOCE</h2>
+
+    <input placeholder="insira quantidade de chocolates" id="inp_choco">
+<br><br>
+
+<button onclick="compra()">Compra</button>
+<br><br>
+
+<div id="div_msg"></div>
+
+
+</body>
+</html>
+<script>
+function compra(){
+    var chocolate = inp_choco.value;
+    var cada = chocolate * 3;
+    var duzia = chocolate * 2.50;
+
+if (chocolate >= 12){
+    div_msg.innerHTML = `O valor da sua compra foi de R$ ${cada}`;
+}
+else{
+    div_msg.innerHTML = `O valor da sua compra foi de R$ ${duzia}`;
+}
+}
+</script>
+

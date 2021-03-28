@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 6</title>
+</head>
+<body>
+
+    <h1>Oque faz um atleta?</h1>
+
+    <button id="but_nada" onclick="Nada()" style="display: block;">Nada</button>
+    <button id="but_corre" onclick="Corre()" style="display: block;">Corre</button>
+    <button id="but_pedala" onclick="Pedala()" style="display: block;">Pedala</button>
+
+    <br>
+<span id="span_nadar" style="display: none;">
+    <img src=nadar.jpg alt="pessoa nadando">
+</span>
+
+<span id="span_correndo" style="display: none;">
+    <img src="correr.jpg" alt="pessoa correndo">
+</span>
+
+<span id="span_pedalar" style="display: none;">
+    <img src="pedalar.jpg" alt="pessoa pedalando em uma bicicleta">
+</span>
+
+
+</body>
+</html>
+
+<script>
+
+function Nada(){
+    span_nadando.style.display = "block";
+    but_nada.style.display = "none";
+    but_nada.style.display = "block";
+}
+
+function Corre(){
+    span_Correr.style.display = "block";
+    but_corre.style.display = "none";
+    but_corre.style.display = "block";
+}
+
+function Pedala(){
+    span_pedala.style.display = "block";
+    but_pedala.style.display = "none";
+    but_pedala.style.display = "block";
+}
+
+</script>

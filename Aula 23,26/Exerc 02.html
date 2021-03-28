@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerc 02</title>
+</head>
+<body>
+    <h1>Quantas latinhas de refrigerante você toma por dia</h1>
+
+    <input id="quant_valor" placeholder="insira o valor">
+    <br><br>
+    <button onclick="quant_refri()">Quantos refris?</button>
+    <br><br>
+
+    <div id="div_msg"></div>
+
+</body>
+</html>
+
+<script>
+    function quant_refri(){
+
+        var latinhas = quant_valor.value;
+        var ano = latinhas*365;
+
+        div_msg.innerHTML = `Você consome cerca de ${ano} por ano`;
+
+
+        if (ano>=500){
+        
+        div_msg.innerHTML += `<br><br><h2>Cuidado com a diabetes!</h2>`;
+    }
+    }
+
+
+</script>

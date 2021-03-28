@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerc 02</title>
+</head>
+<body>
+    <h2>Banco Itado</h2>
+
+    <input placeholder="insira saldo total da conta" id="inp_conta">
+<br><br>
+<input placeholder="insira valor do débito" id="inp_debito">
+
+<button onclick="analisar()">Analisar conta</button>
+<br><br>
+
+<div id="div_msg"></div>
+
+
+</body>
+</html>
+<script>
+function analisar(){
+    var conta = inp_conta.value;
+    var debito = inp_debito.value;
+
+    var result = conta - debito;
+
+    if (result < 0){
+        div_msg.innerHTML = `<br><br><b style="background-color: red">O saldo atual da conta corrente é R$ ${result.toFixed(2)}</b>`;
+    }
+    
+    else {
+         div_msg.innerHTML = `<br><br><i style="background-color: blue">O saldo atual da conta corrente é R$ ${result.toFixed(2)}</i>`;
+        }
+        
+    }
+
+
+</script>

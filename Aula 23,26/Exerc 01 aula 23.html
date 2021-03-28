@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 25 exerc 01</title>
+</head>
+<body>
+    <h1>QUEM GUARDA TEM</h1>
+
+    <input id="ent_val" placeholder="insira o valor">
+    <br><br>
+    <button onclick="ret_cofri()">Retirar do cofrinho</button>
+    <button onclick="depo_cofri()">Depositar no cofrinho</button>
+
+    <div id="div_msg"></div>
+
+</body>
+</html>
+
+<script>
+
+var vezes = 0;
+
+    function depo_cofri(){
+        vezes+=100;
+        div_msg.innerHTML = vezes;
+    }
+
+    function ret_cofri(){
+        vezes-=5;
+        div_msg.innerHTML = vezes;
+    }
+</script>

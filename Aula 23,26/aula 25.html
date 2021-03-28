@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 25</title>
+</head>
+<body>
+    <h3>Utilização global</h3>
+    Você clicou <b id="b_qtde">0</b> vezes em mim
+<br><br>
+    <button onclick="conta()">clica em mim</button>
+    <button onclick="soma100()">somar 100</button>
+    <button onclick="tirar10()">subtrair 10</button>
+</body>
+</html>
+
+<script>
+    var vezes = 0; //variavel global é criada fora da function nessa função a variavel serve para acrescentar 1//
+ 
+    function conta(){
+        vezes++;
+        b_qtde.innerHTML = vezes;
+
+    }
+
+    function soma100(){
+        vezes+100;
+        b_qtde.innerHTML += vezes;
+    }
+
+    function tira10(){
+        vezes-=10;
+        b_qtde.innerHTML += vezes;
+    }
+
+</script>
